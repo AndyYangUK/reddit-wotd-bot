@@ -1,0 +1,4 @@
+4 0 * * * pkill -f wotd-search-and-reply.py
+5 * * * * cd /home/andy/PycharmProjects/WOTD; ./wotd.py >/dev/null 2>&1
+6 0 * * * cd /home/andy/PycharmProjects/WOTD; python3 wotd-search-and-reply.py &
+@reboot cd /home/andy/PycharmProjects/WOTD; python3 wotd-search-and-reply.py &
