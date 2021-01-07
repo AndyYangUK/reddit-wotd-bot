@@ -1,8 +1,6 @@
 # Reddit Word of the Day Bot
 A simple Reddit bot that monitors subreddit comments to see if they have used the word of the day from dictionary.com, and responds to the commentor to let them know that they have used the word of the day.
 
-For more info, see post: https://andyyang.co.uk/reddit-wotd-bot/
-
 ## File structure:
 * **wotd.py**: a script that scrapes the word of the day from dictionary.com and writes 2 output files.
     * **logs/scrape_wotd.txt**: contains a log of all the script runs
