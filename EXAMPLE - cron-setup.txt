@@ -1,5 +1,5 @@
 # Reddit WOTD bot
-5 6 * * * pkill -f reddit-bot.py >/dev/null 2>&1
-6 * * * * cd /home/andy/WOTD; ./scraper.py
-7 6 * * * cd /home/andy/WOTD; nohup /home/andy/WOTD/reddit-bot.py &
-@reboot cd /home/andy/WOTD; nohup /home/andy/WOTD/reddit-bot.py &
+0 */2 * * * pkill -f reddit-bot.py >/dev/null 2>&1
+0 * * * * cd /home/andy/WOTD; ./scraper.py
+1 */2 * * * nohup /home/andy/WOTD/reddit-bot.py &
+@reboot nohup /home/andy/WOTD/reddit-bot.py &
