@@ -21,8 +21,7 @@ content = soup.find('div', {"class": "otd-item-headword__word"})
 
 # within the content, extract the specific element that I need.
 wotd = content.find('h1').text
-
-print(now,"Scraped website. Word of the day is ***",wotd,"***")
+print(now,"- word of the day is",wotd)
 
 # Saving the scraped text
 with open('output/scraped_wotd.txt', 'w') as file:
