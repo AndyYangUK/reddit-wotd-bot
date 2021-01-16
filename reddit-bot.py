@@ -39,8 +39,10 @@ for top_level_comment in subreddit.stream.comments():
             and top_level_comment.author != botname:
 
         #Response
-        bot_reply = f"""**Fun fact:** [{wotd}](https://www.dictionary.com/e/word-of-the-day/) 
-        is the word of the day! \n\n ^------------------------- \n\n*I'm just a lowly bot. Beep boop.*"""
+        bot_reply = f"""**Fun fact:** [{wotd}](https://www.dictionary.com/browse/{wotd}/) is the word of the day! \n\n -------------------------------------->
+[Word of The Day](https://www.dictionary.com/e/word-of-the-day/) | [Github](https://github.com/AndyYangUK/reddit-wotd-bot)\n\n
+*Beep boop, I'm just a lowly bot. Am I a good bot?*"""
+
 
         top_level_comment.reply(bot_reply)
 
